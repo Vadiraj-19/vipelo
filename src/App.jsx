@@ -39,41 +39,48 @@ export default function App() {
 
 
     <section id="home" className="relative h-screen flex items-center">
-      <img
-        src={heroImg}
-        alt="Luxury VIPELO Hero"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+  {/* Background image */}
+  <img
+    src={heroImg}
+    alt="Luxury VIPELO Hero"
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-12 text-white">
-        <p className="uppercase tracking-[0.25em] text-sm text-white/70 mb-4">
-          The Story of a Life Well Crafted
-        </p>
-        <h1 className="font-serif text-5xl md:text-7xl font-bold leading-tight">
-          Welcome to <span className="text-emerald-300">VIPELO</span>
-          <br /> Luxury Kitchen & Bath
-        </h1>
-        <p className="mt-6 text-lg max-w-xl text-white/80">
-          A portfolio of contemporary fixtures where engineering meets artistry.  
-          Discover curated pieces that elevate every room.
-        </p>
-        <div className="mt-8 flex gap-4">
-          <a
-            href="#products"
-            className="px-6 py-3 bg-white text-black rounded-lg shadow-lg hover:bg-emerald-300 hover:text-black transition"
-          >
-            Explore Products
-          </a>
-          <a
-            href="#about"
-            className="px-6 py-3 border border-white/50 text-white rounded-lg hover:bg-white hover:text-black transition"
-          >
-            About Us
-          </a>
-        </div>
-      </div>
-    </section>
+  {/* Content */}
+  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 text-white text-center md:text-left">
+    <p className="uppercase tracking-[0.25em] text-xs sm:text-sm text-white/70 mb-3 sm:mb-4">
+      The Story of a Life Well Crafted
+    </p>
+
+    <h1 className="font-serif text-3xl sm:text-5xl md:text-7xl font-bold leading-tight">
+      Welcome to <span className="text-emerald-300">VIPELO</span>
+      <br className="hidden sm:block" /> Luxury Kitchen & Bath
+    </h1>
+
+    <p className="mt-4 sm:mt-6 text-base sm:text-lg max-w-xl mx-auto md:mx-0 text-white/80">
+      A portfolio of contemporary fixtures where engineering meets artistry.  
+      Discover curated pieces that elevate every room.
+    </p>
+
+    {/* Buttons */}
+    <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center sm:items-start justify-center md:justify-start">
+      <a
+        href="#products"
+        className="w-full sm:w-auto px-6 py-3 bg-white text-black rounded-lg shadow-lg hover:bg-emerald-300 hover:text-black transition"
+      >
+        Explore Products
+      </a>
+      <a
+        href="#about"
+        className="w-full sm:w-auto px-6 py-3 border border-white/50 text-white rounded-lg hover:bg-white hover:text-black transition"
+      >
+        About Us
+      </a>
+    </div>
+  </div>
+</section>
+
   
 
       {/* HERO */}

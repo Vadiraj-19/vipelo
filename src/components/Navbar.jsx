@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react"; // nice icons
 import logo from "../assets/logo.png";   // black logo
 import logo2 from "../assets/logo2.png"; // white logo
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -20,11 +22,10 @@ const Navbar = () => {
       }`}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
-        
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3">
           <img
-            src={scrolled ? logo : logo2} // switch based on scroll
+            src={scrolled ? logo : logo2}
             alt="VipeLo logo"
             className="h-9 w-auto transition-all duration-500"
           />
@@ -37,9 +38,9 @@ const Navbar = () => {
           </span>
         </a>
 
-        {/* Nav Links */}
+        {/* Desktop Nav Links */}
         <div
-          className={`flex items-center gap-10 text-sm font-medium transition-colors duration-500 ${
+          className={`hidden md:flex items-center gap-10 text-sm font-medium transition-colors duration-500 ${
             scrolled ? "text-gray-900" : "text-white"
           }`}
         >
@@ -54,7 +55,38 @@ const Navbar = () => {
             </a>
           ))}
         </div>
+
+        {/* Mobile Hamburger */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className={`md:hidden p-2 rounded-lg transition-colors ${
+            scrolled ? "text-gray-900" : "text-white"
+          }`}
+        >
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </nav>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div
+          className={`md:hidden flex flex-col gap-6 px-8 py-6 transition-colors ${
+            scrolled ? "bg-white/95 text-gray-900" : "bg-black/90 text-white"
+          }`}
+        >
+          {["Home", "About Us", "Products", "Contact Us"].map((link, i) => (
+            <a
+              key={i}
+              href={`#${link.toLowerCase().replace(" ", "")}`}
+              onClick={() => setMenuOpen(false)} // close menu on click
+              className="relative group"
+            >
+              {link}
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-emerald-500 transition-all group-hover:w-full" />
+            </a>
+          ))}
+        </div>
+      )}
     </header>
   );
 };
