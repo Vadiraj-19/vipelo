@@ -88,15 +88,18 @@ export default function App() {
       
 
       {/* CURATED PRODUCTS */}
-      <section id="products" className="py-28 bg-gradient-to-b from-neutral-100 to-neutral-50">
-  <div className="max-w-7xl mx-auto px-6">
+      <section
+  id="products"
+  className="py-20 sm:py-28 bg-gradient-to-b from-neutral-100 to-neutral-50"
+>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6">
     {/* Heading + Catalog Link */}
-    <div className="flex items-end justify-between mb-14">
+    <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 sm:mb-14 text-center md:text-left">
       <div>
-        <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 tracking-wide">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-gray-900 tracking-wide">
           Curated Products
         </h2>
-        <p className="mt-2 text-lg text-gray-600 font-light">
+        <p className="mt-2 text-base sm:text-lg text-gray-600 font-light max-w-xl mx-auto md:mx-0">
           A portfolio of contemporary fixtures where engineering meets artistry
         </p>
       </div>
@@ -107,7 +110,7 @@ export default function App() {
         Request a Catalog
       </a>
     </div>
-
+  
     {/* Product Grid */}
     <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
       {products.map((p, i) => (
