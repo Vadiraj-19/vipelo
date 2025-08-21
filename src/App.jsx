@@ -35,134 +35,134 @@ export default function App() {
       <Navbar />
 
       {/* HERO */}
-      
 
 
-    <section id="home" className="relative h-screen flex items-center">
-  {/* Background image */}
-  <img
-    src={heroImg}
-    alt="Luxury VIPELO Hero"
-    className="absolute inset-0 w-full h-full object-cover"
-  />
-  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
 
-  {/* Content */}
-  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 text-white text-center md:text-left">
-    <p className="uppercase tracking-[0.25em] text-xs sm:text-sm text-white/70 mb-3 sm:mb-4">
-      The Story of a Life Well Crafted
-    </p>
+      <section id="home" className="relative h-screen flex items-center">
+        {/* Background image */}
+        <img
+          src={heroImg}
+          alt="Luxury VIPELO Hero"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
 
-    <h1 className="font-serif text-3xl sm:text-5xl md:text-7xl font-bold leading-tight">
-      Welcome to <span className="text-emerald-300">VIPELO</span>
-      <br className="hidden sm:block" /> Luxury Kitchen & Bath
-    </h1>
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 text-white text-center md:text-left">
+          <p className="uppercase tracking-[0.25em] text-xs sm:text-sm text-white/70 mb-3 sm:mb-4">
+            The Story of a Life Well Crafted
+          </p>
 
-    <p className="mt-4 sm:mt-6 text-base sm:text-lg max-w-xl mx-auto md:mx-0 text-white/80">
-      A portfolio of contemporary fixtures where engineering meets artistry.  
-      Discover curated pieces that elevate every room.
-    </p>
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-7xl font-bold leading-tight">
+            Welcome to <span className="text-emerald-300">VIPELO</span>
+            <br className="hidden sm:block" /> Luxury Kitchen & Bath
+          </h1>
 
-    {/* Buttons */}
-    <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center sm:items-start justify-center md:justify-start">
-      <a
-        href="#products"
-        className="w-full sm:w-auto px-6 py-3 bg-white text-black rounded-lg shadow-lg hover:bg-emerald-300 hover:text-black transition"
-      >
-        Explore Products
-      </a>
-      <a
-        href="#about"
-        className="w-full sm:w-auto px-6 py-3 border border-white/50 text-white rounded-lg hover:bg-white hover:text-black transition"
-      >
-        About Us
-      </a>
-    </div>
-  </div>
-</section>
+          <p className="mt-4 sm:mt-6 text-base sm:text-lg max-w-xl mx-auto md:mx-0 text-white/80">
+            A portfolio of contemporary fixtures where engineering meets artistry.
+            Discover curated pieces that elevate every room.
+          </p>
 
-  
+          {/* Buttons */}
+          <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center sm:items-start justify-center md:justify-start">
+            <a
+              href="#products"
+              className="w-full sm:w-auto px-6 py-3 bg-white text-black rounded-lg shadow-lg hover:bg-emerald-300 hover:text-black transition"
+            >
+              Explore Products
+            </a>
+            <a
+              href="#about"
+              className="w-full sm:w-auto px-6 py-3 border border-white/50 text-white rounded-lg hover:bg-white hover:text-black transition"
+            >
+              About Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+
 
       {/* HERO */}
 
-      
+
 
       {/* CURATED PRODUCTS */}
       <section
-  id="products"
-  className="py-20 sm:py-28 bg-gradient-to-b from-neutral-100 to-neutral-50"
->
-  <div className="max-w-7xl mx-auto px-4 sm:px-6">
-    {/* Heading + Catalog Link */}
-    <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 sm:mb-14 text-center md:text-left">
-      <div>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-gray-900 tracking-wide">
-          Curated Products
-        </h2>
-        <p className="mt-2 text-base sm:text-lg text-gray-600 font-light max-w-xl mx-auto md:mx-0">
-          A portfolio of contemporary fixtures where engineering meets artistry
-        </p>
-      </div>
-      <a
-        href="#contact"
-        className="text-emerald-600 hover:text-emerald-800 font-medium underline"
+        id="products"
+        className="py-20 sm:py-28 bg-gradient-to-b from-neutral-100 to-neutral-50"
       >
-        Request a Catalog
-      </a>
-    </div>
-  
-    {/* Product Grid */}
-    <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-      {products.map((p, i) => (
-        <ProductCard key={i} {...p} />
-      ))}
-    </div>
-  </div>
-</section>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          {/* Heading + Catalog Link */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 sm:mb-14 text-center md:text-left">
+            <div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-gray-900 tracking-wide">
+                Curated Products
+              </h2>
+              <p className="mt-2 text-base sm:text-lg text-gray-600 font-light max-w-xl mx-auto md:mx-0">
+                A portfolio of contemporary fixtures where engineering meets artistry
+              </p>
+            </div>
+            <a
+              href="#contact"
+              className="text-emerald-600 hover:text-emerald-800 font-medium underline"
+            >
+              Request a Catalog
+            </a>
+          </div>
+
+          {/* Product Grid */}
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            {products.map((p, i) => (
+              <ProductCard key={i} {...p} />
+            ))}
+          </div>
+        </div>
+      </section>
 
 
       {/* BRAND STORY / ABOUT */}
       <section id="about" className="relative bg-gradient-to-b from-black via-neutral-900 to-black text-white py-28">
-  <div className="max-w-7xl mx-auto px-6 grid gap-16 md:grid-cols-2 items-center">
-    
-    {/* Left Content */}
-    <div>
-      <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-        About VIPELO
-      </h2>
-      <p className="text-lg text-white/80 leading-relaxed max-w-xl">
-        We believe extraordinary homes are built on timeless craft. 
-        Our partners and makers bring decades of heritage to every 
-        faucet, basin and fitting—designed to perform and built to last.
-      </p>
-      <ul className="mt-8 space-y-4 text-white/80">
-        <li className="flex items-start gap-3">
-          <span className="text-emerald-400 text-lg">✔</span>
-          Precision engineered valves & finishes
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="text-emerald-400 text-lg">✔</span>
-          Thoughtful ergonomics and water efficiency
-        </li>
-        <li className="flex items-start gap-3">
-          <span className="text-emerald-400 text-lg">✔</span>
-          Coordinated hardware across rooms
-        </li>
-      </ul>
-    </div>
+        <div className="max-w-7xl mx-auto px-6 grid gap-16 md:grid-cols-2 items-center">
 
-    {/* Right Image */}
-    <div className="relative">
-      <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
-        <img
-          className="w-full h-full object-cover"
-          src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop"
-          alt="Luxury kitchen and bath"
-        />
-      </div>
-    </div>
-  </div>
-</section>
+          {/* Left Content */}
+          <div>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+              About VIPELO
+            </h2>
+            <p className="text-lg text-white/80 leading-relaxed max-w-xl">
+              We believe extraordinary homes are built on timeless craft.
+              Our partners and makers bring decades of heritage to every
+              faucet, basin and fitting—designed to perform and built to last.
+            </p>
+            <ul className="mt-8 space-y-4 text-white/80">
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-400 text-lg">✔</span>
+                Precision engineered valves & finishes
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-400 text-lg">✔</span>
+                Thoughtful ergonomics and water efficiency
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-emerald-400 text-lg">✔</span>
+                Coordinated hardware across rooms
+              </li>
+            </ul>
+          </div>
+
+          {/* Right Image */}
+          <div className="relative">
+            <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+              <img
+                className="w-full h-full object-cover"
+                src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1600&auto=format&fit=crop"
+                alt="Luxury kitchen and bath"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* CONTACT */}

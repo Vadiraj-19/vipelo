@@ -44,7 +44,7 @@ const Navbar = () => {
             scrolled ? "text-gray-900" : "text-white"
           }`}
         >
-          {["Home", "About Us", "Products", "Contact Us"].map((link, i) => (
+          {["Home", "About", "Products", "Contact"].map((link, i) => (
             <a
               key={i}
               href={`#${link.toLowerCase().replace(" ", "")}`}
@@ -74,7 +74,7 @@ const Navbar = () => {
             scrolled ? "bg-white/95 text-gray-900" : "bg-black/90 text-white"
           }`}
         >
-          {["Home", "About Us", "Products", "Contact Us"].map((link, i) => (
+          {["Home", "About", "Products", "Contact"].map((link, i) => (
             <a
               key={i}
               href={`#${link.toLowerCase().replace(" ", "")}`}
